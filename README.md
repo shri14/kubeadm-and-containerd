@@ -123,6 +123,15 @@ kubeadm join \
 192.168.56.2:6443 --token … --discovery-token-ca-cert-hash sha256 . . . .
 ```
 
+
+
+#**if host connection error**
+
+sudo -i
+swapoff -a
+exit
+strace -eopenat kubectl version
+
 ## Test the setup
 ```
 kubectl get nodes
