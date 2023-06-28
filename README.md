@@ -128,8 +128,11 @@ kubeadm join \
 #**if host connection error**
 
 sudo -i
+
 swapoff -a
+
 exit
+
 strace -eopenat kubectl version
 
 ## Test the setup
